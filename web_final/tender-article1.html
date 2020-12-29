@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tender-article1</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #455D85;
+        }
+
+        /* desktop */
+        @media (min-width:1024px) and (max-width:1439px) {
+            .header-box {
+                width: 100%;
+                height: 153px;
+                background-color: #e2e2e2;
+            }
+
+            .header-box>img {
+                margin: 42px auto;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin-top:100px;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 1080px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 910px;
+                height: 26px;
+                position: relative;
+                left: 80px;
+                bottom: 50px;
+                display: inline-block;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 115px;
+            }
+
+            #author-moon-line{
+                background-color:#FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);width: 55px;
+                margin-left:55px;margin-top: 7px;margin-left: 180px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 100px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 115px;
+            }
+
+            .author>img {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 70px;
+            }
+
+            #wave {
+                margin-left: 500px;
+                width: 250px;
+                height: auto;
+                display: inline-block;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 590px;
+                margin: 45px auto;
+                text-align:justify;
+            }
+            
+            #tender-conversation-1 {
+                width: 350px;
+                height: auto;
+            }
+
+            #tender-conversation-2{
+                margin-left:900px;
+                width: 350px;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 590px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-line {
+                display: inline-block;
+                width: 3px;
+                height: 40px;
+                background-color: #8ECAE6;
+                margin-left: 340px;
+            }
+
+            .figcaption-1 {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #FFFFFF;
+                display: inline-block;
+                width: 500px;
+                margin-left: 25px;
+            }
+
+            .infobox {
+                width: 1036px;
+                height: 440px;
+                background-color: #D5E5FF;
+                margin: 110px auto;
+                display: flex;
+                position: relative;
+            }
+
+            .infobox>span{
+                color:#1B5DC8;font-style: normal;font-weight: bold;font-size: 25px;line-height: 50px;
+                position: absolute;top:30px;left:70px;
+            }
+
+            .infobox>img {
+                width: 256px;
+                height: 168px;
+                border-radius: 10px;
+                position: absolute;
+                top: 110px;
+            }
+
+            .infobox>p{
+                font-style: normal;font-weight: normal;font-size: 20px;line-height: 30px;color: #00296B;
+                position: absolute;top:250px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 200px;
+                position: absolute;
+            }
+
+            .bottom>img{
+                position: relative;
+                top:115px;left:130px;
+                display: inline-block;
+            }
+
+            .bottom>span {
+                font-style: normal;
+                font-weight: normal;
+                font-size:16px;
+                color: #F6F6F6;
+                position: relative;
+                display:inline-block;
+            }
+
+            .bottom>div{
+                width: 2px;
+                height: 150px;
+                background-color: #e2e2e2;
+                margin-left: 800px;
+            }
+
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="header-box">
+            <!--logo暫-->
+            <img src="../web_final/icon/header.png">
+        </div>
+        <h2>溫柔助眠</h2>
+        <h1>當代元素融傳統畫作　張小黎以積木描繪山水</h1>
+        <figure class="first-img">
+            <img src="../web_final/photo/tender-art-1.jpg">
+            <div class="first-figcaption-box">
+                <figcaption>張小黎傳統山水畫中的元素轉為樂高積木，以當代視角呈現傳統山水畫，如作品〈臨摹沈周山水圖卷〉的局部內容。　圖／大觀藝術空間提供
+                </figcaption>
+            </div>
+        </figure>
+        <!--月亮暫-->
+        <img id="author-moon" src="../web_final/icon/Frame.png">
+        <div id="author-moon-line"></div>
+        <div class="author">
+            <img src="../web_final/icon/Ellipse 3.png">
+            <p1 style="display: inline-block;">蔡淳宇</p1>
+            <p2>2019/11/20 21:14:18</p2>
+        </div>
+        <img id="wave" src="../web_final/icon/wave.png">
+        <p>由樂高積木組成的山景、樹木與人物，構成一幅既傳統又現代的山水畫。就讀中央美術學院碩士班的張小黎，16日於台北市大觀藝術空間首次在台舉辦個展《逸景．珍觀．戲山水》。她將傳統山水畫中的景物與人，替換為樂高積木，從現代人的角度觀看傳統山水。
+        </p>
+        <p>作品〈臨摹學習〉中，張小黎描繪傳統山水畫的不同元素，並一一對應成樂高積木的樣態。此靈感源於她在大學時期學習傳統山水畫的經歷，她提到，每個人雖然都臨摹同件作品，呈現出的樣子卻都帶有個人特色，讓她了解到臨摹其實是一種主觀看待傳統的方式。於是，她在繪製傳統山水時，加入自己對傳統山水的主觀感受，將山石分解成塊，再轉化為具有現代感的樂高積木。
+        </p>
+        <img id="tender-conversation-1" src="../web_final/icon/conversation-2.png">
+        <figure class="img-in-article">
+            <img src="../web_final/photo/tender-art-2.jpg">
+        </figure>
+        <div class="figcaption-line"></div>
+        <div class="figcaption-1">
+            作品〈臨摹學習〉。張小黎由臨摹傳統山水的經驗出發，以傳統山水元素對應樂高積木。　圖／大觀藝術空間提供</div>
+        <p>開封的罐頭內，裝載著以幾何線條構成的山水，此為作品〈一罐山水III〉。張小黎解釋，有些人認為傳統應保存原樣，如同罐頭被密封、完整保存的狀態。然而，不同於罐頭的包裝為傳統山水，罐頭內卻裝著幾何形式的景致，就像在傳統形式中融入現代元素，她說：「或許在罐頭被拉開的瞬間，它已經變成另一種樣貌了。」
+        </p>
+        <figure class="img-in-article">
+            <img src="../web_final/photo/tender-art-3.jpg">
+        </figure>
+        <div class="figcaption-line"></div>
+        <div class="figcaption-1">
+            張小黎在作品〈一罐山水III〉中，以罐頭內外不同的山水樣貌，反映傳統與當代的差異。　圖／大觀藝術空間提供</div>
+        <p>張小黎也藉由不同的觀看角度呈現山水，以作品〈俯〉與〈仰〉為例。她說明，傳統山水畫大多以俯角觀看景色，較少如作品〈仰〉呈現由下而上的視角。並且，俯角與仰角，也呼應張小黎以傳統及現代兩種方式描摹山水。觀眾楊羽婷表示，自己對傳統山水畫有著不寫實、疏離於日常生活的印象，而創作者將山水化為積木的形式，有趣且更貼近現代生活。
+        </p>
+        <figure class="img-in-article">
+            <img src="../web_final/photo/tender-art-4.jpg">
+        </figure>
+        <div class="figcaption-line"></div>
+        <div class="figcaption-1">
+            作品〈仰〉中，觀看者如同站在屋頂天窗的下方，由下而上觀賞山水。　圖／大觀藝術空間提供</div>
+        <img id="tender-conversation-2" src="../web_final/icon/conversation-5.png">
+        <p>曾待過香港、北京等地的張小黎，也觀察到不同城市之間的相似性。例如當同樣的超商品牌存在不同城市，這些品牌便如樂高積木的零件，在相異的城市中，拼組出相同的景觀。於是，有別於張小黎大多創作山水畫，她也以系列作品《便利店》直接繪出超商的樣貌。觀眾李承諺認為，創作者以傳統山水畫為媒材描繪超商，使傳統元素自然地融於現代生活中。
+        </p>
+        <div class="infobox">
+            <span>再挑選一份助眠良物吧！</span>
+            <img src="../web_final/photo/infobox-1.jpg" style="left: 75px;">
+            <img src="../web_final/photo/infobox-2.jpg" style="left: 400px;">
+            <img src="../web_final/photo/infobox-3.jpg" style="right:65px">
+            <p style="left:75px;width:256px;">當人民進入刑事審判　國民法官制的挑戰與展望</p>
+            <p style="left:400px;width:256px;">「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
+            <p style="right:65px;width:256px;">《送報伕》談勞動者　融舞蹈訴壓迫</p>
+        </div>
+        <!--羊暫-->
+        <img src="../web_final/icon/sheep.png" style="display:block;margin:100px auto;">
+        <div class="bottom">
+            <!--關於我們暫-->
+            <img src="../web_final/icon/Group 19.png">
+            <span style="left:560px;top:20px;">記者</span>
+            <span style="left:630px;top:20px;">陳珮瑄</span>
+            <span style="left:579px;top:50px;">蔡淳宇</span>
+            <span style="left:528px;top:80px;">劉書妤</span>
+            <span style="left:476px;top:110px;">吳曼嘉</span>
+            <span style="left:425px;top:140px;">張佳琪</span>
+            <div></div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
