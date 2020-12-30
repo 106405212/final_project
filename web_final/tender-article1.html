@@ -20,19 +20,28 @@
         @media (min-width:1024px) and (max-width:1439px) {
             .header-box {
                 width: 100%;
-                height: 153px;
+                height: 110px;
                 background-color: #e2e2e2;
             }
 
-            .header-box>img {
-                margin: 42px auto;
+            .logo {
+                margin: auto;
+                width: 300px;
+                height: auto;
             }
+
+            .logo>img {
+                padding-top: 23px;
+                width: 100%;
+                height: auto;
+            }
+
 
             h2 {
                 font-size: 26px;
                 line-height: 40px;
                 font-weight: 500;
-                margin-top:100px;
+                margin-top: 100px;
                 text-align: center;
                 color: #FFF6C6;
             }
@@ -79,11 +88,14 @@
                 margin-left: 115px;
             }
 
-            #author-moon-line{
-                background-color:#FFFFFF;
+            #author-moon-line {
+                background-color: #FFFFFF;
                 border: 0.5px solid #FFFFFF;
-                transform: rotate(90deg);width: 55px;
-                margin-left:55px;margin-top: 7px;margin-left: 180px;
+                transform: rotate(90deg);
+                width: 55px;
+                margin-left: 55px;
+                margin-top: 7px;
+                margin-left: 180px;
             }
 
             .author {
@@ -110,6 +122,7 @@
                 position: absolute;
                 left: 88px;
                 top: 30px;
+                display: inline-block;
             }
 
             .author>p2 {
@@ -137,16 +150,16 @@
                 color: #FFFFFF;
                 width: 590px;
                 margin: 45px auto;
-                text-align:justify;
+                text-align: justify;
             }
-            
+
             #tender-conversation-1 {
                 width: 350px;
                 height: auto;
             }
 
-            #tender-conversation-2{
-                margin-left:900px;
+            #tender-conversation-2 {
+                margin-left: 900px;
                 width: 350px;
                 height: auto;
             }
@@ -183,27 +196,48 @@
                 width: 1036px;
                 height: 440px;
                 background-color: #D5E5FF;
-                margin: 110px auto;
+                margin: 100px auto;
                 display: flex;
                 position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
             }
 
-            .infobox>span{
-                color:#1B5DC8;font-style: normal;font-weight: bold;font-size: 25px;line-height: 50px;
-                position: absolute;top:30px;left:70px;
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 70px;
             }
 
-            .infobox>img {
+            .related-item {
+                width: 320px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+            }
+
+            .related-item>img {
                 width: 256px;
                 height: 168px;
                 border-radius: 10px;
                 position: absolute;
                 top: 110px;
+
             }
 
-            .infobox>p{
-                font-style: normal;font-weight: normal;font-size: 20px;line-height: 30px;color: #00296B;
-                position: absolute;top:250px;
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                width: 250px;
+                color: #00296B;
+                position: absolute;
+                top: 250px;
             }
 
             .bottom {
@@ -214,26 +248,33 @@
                 position: absolute;
             }
 
-            .bottom>img{
+            .bottom>img {
                 position: relative;
-                top:115px;left:130px;
+                top: 115px;
+                left: 130px;
                 display: inline-block;
             }
 
-            .bottom>span {
-                font-style: normal;
-                font-weight: normal;
-                font-size:16px;
-                color: #F6F6F6;
-                position: relative;
-                display:inline-block;
+            .bottom>div {
+                width: 126px;
+                height: 183px;
+                margin-left: 900px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 50px;
             }
 
-            .bottom>div{
-                width: 2px;
-                height: 150px;
-                background-color: #e2e2e2;
-                margin-left: 800px;
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
             }
 
         }
@@ -245,8 +286,11 @@
 <body>
     <div>
         <div class="header-box">
-            <!--logo暫-->
-            <img src="../web_final/icon/header.png">
+            <a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%96%AC%E6%84%89">
+                <div class="logo">
+                    <img src="../web_final/icon/logo-horizontal.png">
+                </div>
+            </a>
         </div>
         <h2>溫柔助眠</h2>
         <h1>當代元素融傳統畫作　張小黎以積木描繪山水</h1>
@@ -262,7 +306,7 @@
         <div id="author-moon-line"></div>
         <div class="author">
             <img src="../web_final/icon/Ellipse 3.png">
-            <p1 style="display: inline-block;">蔡淳宇</p1>
+            <p1>蔡淳宇</p1>
             <p2>2019/11/20 21:14:18</p2>
         </div>
         <img id="wave" src="../web_final/icon/wave.png">
@@ -296,28 +340,34 @@
         <img id="tender-conversation-2" src="../web_final/icon/conversation-5.png">
         <p>曾待過香港、北京等地的張小黎，也觀察到不同城市之間的相似性。例如當同樣的超商品牌存在不同城市，這些品牌便如樂高積木的零件，在相異的城市中，拼組出相同的景觀。於是，有別於張小黎大多創作山水畫，她也以系列作品《便利店》直接繪出超商的樣貌。觀眾李承諺認為，創作者以傳統山水畫為媒材描繪超商，使傳統元素自然地融於現代生活中。
         </p>
+        <!--這邊超連結還沒加-->
         <div class="infobox">
             <span>再挑選一份助眠良物吧！</span>
-            <img src="../web_final/photo/infobox-1.jpg" style="left: 75px;">
-            <img src="../web_final/photo/infobox-2.jpg" style="left: 400px;">
-            <img src="../web_final/photo/infobox-3.jpg" style="right:65px">
-            <p style="left:75px;width:256px;">當人民進入刑事審判　國民法官制的挑戰與展望</p>
-            <p style="left:400px;width:256px;">「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
-            <p style="right:65px;width:256px;">《送報伕》談勞動者　融舞蹈訴壓迫</p>
+            <div class="related-item">
+                <img src="../web_final/photo/infobox-1.jpg">
+                <p>當人民進入刑事審判　國民法官制的挑戰與展望</p>
+            </div>
+            <div class="related-item">
+                <img src="../web_final/photo/infobox-2.jpg">
+                <p>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
+            </div>
+            <div class="related-item">
+                <img src="../web_final/photo/infobox-3.jpg">
+                <p>《送報伕》談勞動者　融舞蹈訴壓迫</p>
+            </div>
         </div>
         <!--羊暫-->
-        <img src="../web_final/icon/sheep.png" style="display:block;margin:100px auto;">
+        <img src="../web_final/icon/sheep.png" style="display:block;margin:10px auto;">
         <div class="bottom">
-            <!--關於我們暫-->
-            <img src="../web_final/icon/Group 19.png">
-            <span style="left:560px;top:20px;">記者</span>
-            <span style="left:630px;top:20px;">陳珮瑄</span>
-            <span style="left:579px;top:50px;">蔡淳宇</span>
-            <span style="left:528px;top:80px;">劉書妤</span>
-            <span style="left:476px;top:110px;">吳曼嘉</span>
-            <span style="left:425px;top:140px;">張佳琪</span>
-            <div></div>
-            
+            <!--關於我們暫，這邊超連結還沒加-->
+                <img src="../web_final/icon/Group 19.png">
+            <div>
+                <span class="our-name">陳珮瑄</span>
+                <span class="our-name">蔡淳宇</span>
+                <span class="our-name">劉書妤</span>
+                <span class="our-name">吳曼嘉</span>
+                <span class="our-name">張佳琪</span>
+            </div>
         </div>
     </div>
 
