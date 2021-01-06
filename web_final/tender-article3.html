@@ -84,7 +84,7 @@
             #author-moon {
                 margin-top: 10px;
                 margin-left: 80px;
-                width:180px;
+                width: 180px;
             }
 
             #author-moon-line {
@@ -226,6 +226,7 @@
             .related-item>img {
                 width: 256px;
                 height: 168px;
+                object-fit: cover;
                 border-radius: 10px;
                 position: absolute;
                 top: 110px;
@@ -243,11 +244,11 @@
                 top: 250px;
             }
 
-            .sheep{
-                width:500px;
-                height:auto;
-                display:block;
-                margin-top:10px;
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
             }
 
             .bottom {
@@ -263,8 +264,8 @@
                 top: 105px;
                 left: 220px;
                 display: inline-block;
-                width:200px;
-                height:auto;
+                width: 200px;
+                height: auto;
             }
 
             .bottom>div {
@@ -326,7 +327,7 @@
                 font-size: 40px;
                 line-height: 60px;
                 color: #FFFFFF;
-                width:650px;
+                width: 650px;
                 margin: 0px auto;
                 text-align: center;
             }
@@ -361,7 +362,7 @@
             #author-moon {
                 margin-top: 10px;
                 margin-left: 70px;
-                width:180px;
+                width: 180px;
             }
 
             #author-moon-line {
@@ -504,6 +505,7 @@
             .related-item>img {
                 width: 155px;
                 height: 110px;
+                object-fit: cover;
                 border-radius: 10px;
                 position: absolute;
                 top: 80px;
@@ -520,11 +522,11 @@
                 top: 160px;
             }
 
-            .sheep{
-                width:500px;
-                height:auto;
-                display:block;
-                margin-top:10px;
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
             }
 
             .bottom {
@@ -540,8 +542,8 @@
                 top: 100px;
                 left: 130px;
                 display: inline-block;
-                width:200px;
-                height:auto;
+                width: 200px;
+                height: auto;
             }
 
             .bottom>div {
@@ -568,8 +570,8 @@
 
         }
 
-         /* Mobile */
-         @media (max-width: 767px) {
+        /* Mobile */
+        @media (max-width: 767px) {
             .header-box {
                 width: 100%;
                 height: 70px;
@@ -645,7 +647,7 @@
                 margin-left: 140px;
                 margin-top: 5px;
             }
-            
+
             .author {
                 background-color: #C4C4C4;
                 width: 148px;
@@ -777,6 +779,7 @@
             .related-item>img {
                 width: 110px;
                 height: 75px;
+                object-fit: cover;
                 margin-top: 75px;
                 border-radius: 10px;
                 display: inline-block;
@@ -795,11 +798,11 @@
                 margin-top: 75px;
             }
 
-            .sheep{
-                width:300px;
-                height:auto;
-                display:block;
-                margin:10px auto;
+            .sheep {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin: 10px auto;
             }
 
             .bottom {
@@ -819,7 +822,7 @@
             }
 
             .bottom>div {
-                width:80px;
+                width: 80px;
                 height: 183px;
                 margin-left: 235px;
                 border-left: 0.5px solid #e2e2e2;
@@ -840,105 +843,103 @@
                 display: inline-block;
             }
         }
-
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div>
-        <div class="header-box">
-            <a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%96%AC%E6%84%89"></a>
-            <div class="logo">
-                <img src="../web_final/icon/logo-horizontal.png">
-            </div>
-            </a>
+    <div class="header-box">
+        <!--暫定超連結-->
+        <div class="logo" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <img src="../web_final/icon/logo-horizontal.png">
         </div>
-        <h2>溫柔助眠</h2>
-        <h1>移民火星　《不在這裡》演繹迷失狀態</h1>
-        <div class="first-img">
-            <img src="../web_final/tender-photo/tender-art-3.1.jpg">
-            <div class="first-figcaption-box">
-                <figcaption>入口處炫目的藍光和紅光呈現科技和未來感，左右兩處的標語以有趣的方式點出「太空移民」的概念。　圖／劉書妤攝
-                </figcaption>
-            </div>
+    </div>
+    <h2>溫柔助眠</h2>
+    <h1>移民火星　《不在這裡》演繹迷失狀態</h1>
+    <div class="first-img">
+        <img src="../web_final/tender-photo/tender-art-3.1.jpg">
+        <div class="first-figcaption-box">
+            <figcaption>入口處炫目的藍光和紅光呈現科技和未來感，左右兩處的標語以有趣的方式點出「太空移民」的概念。　圖／劉書妤攝
+            </figcaption>
         </div>
-        <img id="author-moon" src="../web_final/icon/Frame.png">
-        <div id="author-moon-line"></div>
-        <div class="author">
-            <img src="../web_final/icon/Ellipse 2 (1).png">
-            <p1>劉書妤</p1>
-            <p2>2019/10/23 22:47:56</p2>
+    </div>
+    <img id="author-moon" src="../web_final/icon/Frame.png">
+    <div id="author-moon-line"></div>
+    <div class="author">
+        <img src="../web_final/icon/shuyu_photo.jpg" style="border-radius: 50%; width: 55px;">
+        <p1>劉書妤</p1>
+        <p2>2019/10/23 22:47:56</p2>
+    </div>
+    <div class="wave">
+        <img src="../web_final/icon/wave.png">
+    </div>
+    <p>一踏入演出場地，瀰漫空間的煙霧和螢光色的燈光打造出科幻感，「＃腦袋空空」和「＃就上太空」的標語逗趣地展現太空移民的主題。這是「Mars BUG——熒惑蟲計畫
+        」三部曲系列的第二部曲《不在這裡》，20日於「空總臺灣當代文化實驗場C-LAB」演出，劇中以大量對話為主，且部分內容以錄音呈現。
+    </p>
+    <p>《不在這裡》的劇情來自兩位擬真機器人Iris和Alice的一份報告，呈現火星第一批移民的生活紀錄。劇情延伸自獲得2018台北藝穗節首獎的戲劇作品《我好揪節——你想要的都不在這裡》，並結合國立台北藝術大學戲劇學系暨劇場藝術創作研究所劇本創作組學生陳弘洋的生命經驗。
+    </p>
+    <p>劇本的主要角色共三人，分別為Iris、Alice和Yang，前兩者是火星的女性機器人，而後者是火星的第一批移民，同時是勞動者和地球人，也是編劇兼表演者陳弘洋的化身。劇本特別之處在於內容不具備明確的敘事脈絡，主要劇情為Yang在澳洲打工的日記，穿插Iris和Alice說明太空的資料，傳達出人們對於現實期待落空的心情，並因此產生移民火星的念頭。
+    </p>
+    <img class="tender-conversation-left" src="../web_final/icon/conversation-2.png">
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-art-3.2.jpg">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>兩位女性機器人Iris和Alice聽著訊號接收器傳來地球人Yang的報告，內容傳達Yang在澳洲打工的日記。　圖／劉書妤攝</figcaption>
+    </div>
+    <p>最初幾位頭戴紙袋、象徵來自地球的勞動者們正在粉刷牆壁，接著燈光暗下，演出也正式開始。開場時，Yang拿著藍色塑膠袋、頭上配戴手機，他急促地唸著在澳洲寫下的日記。Iris和Alice則聽著太空接收器傳來Yang唸誦澳洲日記的聲音，他們不時停止播放Yang的生活紀錄，並朗讀關於太空人死亡、到達火星的成本等資訊。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-art-3.3.jpg">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>頭套著紙袋的地球勞動者開始破壞展場的作品，整個世界彷彿變得殘破不堪且荒涼。 　圖／劉書妤攝</figcaption>
+    </div>
+    <p>導演、現就讀北藝大劇場藝術創作研究所導演組的吳子敬提到，劇本內容一部分是陳弘洋自己寫的澳洲日記，表達私密的經驗和個人情感，另一部分則取材自網路上可搜尋到的公開資料，內容是較理性的文字。吳子敬說：「這個對比對我來說是處理文本有趣的地方。」另外，他也認為，編劇願意拿出自己的日記，對導演來說是難能可貴的事。
+    </p>
+    <p>「我們不管在哪裡都不會快樂，即使我們真的到火星也沒辦法改變。」陳弘洋略帶悲觀地說。他表示，太空移民取自人類對於前往火星的期待，由此討論身處台灣的我們嚮往異國的念頭，出國打工即是其中一個面向。然而，其實大部分的人並不知道自己能去哪裡或想去哪裡，但就是想去遠方，甚至到最後可能發現一切都是一場空。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-art-3.4.jpg">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>Yang手拿藍色垃圾袋，坐在貨櫃上方，神情呈現滿滿的無奈感。　圖／劉書妤攝</figcaption>
+    </div>
+    <div class="tender-conversation-right">
+        <img src="../web_final/icon/conversation-8.png">
+    </div>
+    <p>陳弘洋也在劇本中加入由兩位機器人朗讀地球人的祈願，包含「學會新技能」和「身體健康平安」，這些祈願皆象徵對生活的期待。人們對現階段的生活不滿意，可是他們也不知道不滿的原因，並不斷欲求更多，火星移民就是因人類欲求不滿而產生的想法。
+    </p>
+    <p>故事進入尾聲，最初Yang懷抱夢想至澳洲打工，最後卻倉促地離開澳洲，他覺得自己彷彿落荒而逃。而觀眾蔡傑曦認為，此劇從很多小細節談「離開」的概念，包括Yang最初離台前往澳洲，到最後他逃離澳洲，且Iris和Alice也在故事中朗讀太空人死亡的資訊，劇中包含各種不同層次的離開，象徵在生命和生活場域中遷徙的概念。
+    </p>
+    <div class="infobox">
+        <span>再挑選一份助眠良物吧！</span>
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article1.html'">
+            <img src="../web_final/tender-photo/tender-art-1.1.jpg">
+            <p>當代元素融傳統畫作　張小黎以積木描繪山水</p>
         </div>
-        <div class="wave">
-            <img src="../web_final/icon/wave.png">
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article4.html'">
+            <img src="../web_final/tender-photo/tender-art-4.1.jpg">
+            <p>藉養蠶喻親子關係　《鼻屎兒》談為母心境</p>
         </div>
-        <p>一踏入演出場地，瀰漫空間的煙霧和螢光色的燈光打造出科幻感，「＃腦袋空空」和「＃就上太空」的標語逗趣地展現太空移民的主題。這是「Mars BUG——熒惑蟲計畫 」三部曲系列的第二部曲《不在這裡》，20日於「空總臺灣當代文化實驗場C-LAB」演出，劇中以大量對話為主，且部分內容以錄音呈現。
-        </p>
-        <p>《不在這裡》的劇情來自兩位擬真機器人Iris和Alice的一份報告，呈現火星第一批移民的生活紀錄。劇情延伸自獲得2018台北藝穗節首獎的戲劇作品《我好揪節——你想要的都不在這裡》，並結合國立台北藝術大學戲劇學系暨劇場藝術創作研究所劇本創作組學生陳弘洋的生命經驗。
-        </p>
-        <p>劇本的主要角色共三人，分別為Iris、Alice和Yang，前兩者是火星的女性機器人，而後者是火星的第一批移民，同時是勞動者和地球人，也是編劇兼表演者陳弘洋的化身。劇本特別之處在於內容不具備明確的敘事脈絡，主要劇情為Yang在澳洲打工的日記，穿插Iris和Alice說明太空的資料，傳達出人們對於現實期待落空的心情，並因此產生移民火星的念頭。
-        </p>
-        <img class="tender-conversation-left" src="../web_final/icon/conversation-2.png">
-        <figure class="img-in-article">
-            <img src="../web_final/tender-photo/tender-art-3.2.jpg">
-        </figure>
-        <div class="figcaption-in-article">
-            <figcaption>兩位女性機器人Iris和Alice聽著訊號接收器傳來地球人Yang的報告，內容傳達Yang在澳洲打工的日記。　圖／劉書妤攝</figcaption>
+        <!--暫定超連結-->
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <img src="../web_final/tender-photo/infobox-2.jpg">
+            <p>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
         </div>
-        <p>最初幾位頭戴紙袋、象徵來自地球的勞動者們正在粉刷牆壁，接著燈光暗下，演出也正式開始。開場時，Yang拿著藍色塑膠袋、頭上配戴手機，他急促地唸著在澳洲寫下的日記。Iris和Alice則聽著太空接收器傳來Yang唸誦澳洲日記的聲音，他們不時停止播放Yang的生活紀錄，並朗讀關於太空人死亡、到達火星的成本等資訊。
-        </p>
-        <figure class="img-in-article">
-            <img src="../web_final/tender-photo/tender-art-3.3.jpg">
-        </figure>
-        <div class="figcaption-in-article">
-            <figcaption>頭套著紙袋的地球勞動者開始破壞展場的作品，整個世界彷彿變得殘破不堪且荒涼。 　圖／劉書妤攝</figcaption>
-        </div>
-        <p>導演、現就讀北藝大劇場藝術創作研究所導演組的吳子敬提到，劇本內容一部分是陳弘洋自己寫的澳洲日記，表達私密的經驗和個人情感，另一部分則取材自網路上可搜尋到的公開資料，內容是較理性的文字。吳子敬說：「這個對比對我來說是處理文本有趣的地方。」另外，他也認為，編劇願意拿出自己的日記，對導演來說是難能可貴的事。
-        </p>
-        <p>「我們不管在哪裡都不會快樂，即使我們真的到火星也沒辦法改變。」陳弘洋略帶悲觀地說。他表示，太空移民取自人類對於前往火星的期待，由此討論身處台灣的我們嚮往異國的念頭，出國打工即是其中一個面向。然而，其實大部分的人並不知道自己能去哪裡或想去哪裡，但就是想去遠方，甚至到最後可能發現一切都是一場空。
-        </p>
-        <figure class="img-in-article">
-            <img src="../web_final/tender-photo/tender-art-3.4.jpg">
-        </figure>
-        <div class="figcaption-in-article">
-            <figcaption>Yang手拿藍色垃圾袋，坐在貨櫃上方，神情呈現滿滿的無奈感。　圖／劉書妤攝</figcaption>
-        </div>
-        <div class="tender-conversation-right">
-            <img src="../web_final/icon/conversation-8.png">
-        </div>
-        <p>陳弘洋也在劇本中加入由兩位機器人朗讀地球人的祈願，包含「學會新技能」和「身體健康平安」，這些祈願皆象徵對生活的期待。人們對現階段的生活不滿意，可是他們也不知道不滿的原因，並不斷欲求更多，火星移民就是因人類欲求不滿而產生的想法。
-        </p>
-        <p>故事進入尾聲，最初Yang懷抱夢想至澳洲打工，最後卻倉促地離開澳洲，他覺得自己彷彿落荒而逃。而觀眾蔡傑曦認為，此劇從很多小細節談「離開」的概念，包括Yang最初離台前往澳洲，到最後他逃離澳洲，且Iris和Alice也在故事中朗讀太空人死亡的資訊，劇中包含各種不同層次的離開，象徵在生命和生活場域中遷徙的概念。
-        </p>
-        <!--這邊超連結還沒加-->
-        <div class="infobox">
-            <span>再挑選一份助眠良物吧！</span>
-            <div class="related-item">
-                <img src="../web_final/tender-photo/tender-art-1.1.jpg">
-                <p>當代元素融傳統畫作　張小黎以積木描繪山水</p>
-            </div>
-            <div class="related-item">
-                <img src="../web_final/tender-photo/infobox-2.jpg">
-                <p>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
-            </div>
-            <div class="related-item">
-                <img src="../web_final/tender-photo/infobox-3.jpg">
-                <p>《送報伕》談勞動者　融舞蹈訴壓迫</p>
-            </div>
-        </div>
-        <img class="sheep" src="../web_final/icon/running-sheep.png" style="display:block;margin:10px auto;">
-        <div class="bottom">
-            <!--關於我們暫，這邊超連結還沒加-->
-            <img src="../web_final/icon/about-us.png">
-            <div>
-                <span class="our-name">陳珮瑄</span>
-                <span class="our-name">蔡淳宇</span>
-                <span class="our-name">劉書妤</span>
-                <span class="our-name">吳曼嘉</span>
-                <span class="our-name">張佳琪</span>
-            </div>
+    </div>
+    <img class="sheep" src="../web_final/icon/running-sheep.png" style="display:block;margin:10px auto;">
+    <div class="bottom">
+        <!--暫定超連結-->
+        <img src="../web_final/icon/about-us.png" style=" cursor:pointer;"
+            onclick="location.href='./tender-article2.html'">
+        <div>
+            <span class="our-name">陳珮瑄</span>
+            <span class="our-name">蔡淳宇</span>
+            <span class="our-name">劉書妤</span>
+            <span class="our-name">吳曼嘉</span>
+            <span class="our-name">張佳琪</span>
         </div>
     </div>
 
