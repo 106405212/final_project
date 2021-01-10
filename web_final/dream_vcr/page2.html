@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「瘋」街供兒童遊戲　北市跟進簡化申請程序－還醒者</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #3A4F72;
+        }
+
+        /* desktop */
+        @media (min-width:1024px) {
+            .header-box {
+                width: 100%;
+                height: 110px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 23px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .introduction {
+                height: 600px;
+                background-position: center;
+                background-image: url(./images/rabbit.png);
+                background-repeat: no-repeat;
+                background-size: 50%;
+                text-align: center;
+                margin-bottom: 3%;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 30px;
+                color: #171a4d;
+                width: 380px;
+                text-align: justify;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 11% 1% 12% 12%;
+                overflow: auto;
+                height: 320px;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 80px;
+                width: 180px;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 55px;
+                margin-top: 7px;
+                margin-left: 140px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 190px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 80px;
+            }
+
+            .author>img {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+            }
+
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 25px;
+                top: 160px;
+            }
+
+            .author>p3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 105px;
+                display: inline-block;
+            }
+
+
+            .wave {
+                margin: 0 auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .video {
+                text-align: center;
+                margin-bottom: 12%;
+                margin-top: 3%;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 590px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 350px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 350px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 590px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 580px;
+                height: 50px;
+                margin: 20px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 25px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 560px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 1000px;
+                height: 440px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 50px;
+            }
+
+            .related-item {
+                width: 320px;
+                padding-bottom: 40px;
+                padding-left: 55px;
+            }
+
+            .related-item>img {
+                width: 256px;
+                height: 168px;
+                border-radius: 10px;
+                position: absolute;
+                top: 110px;
+
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                width: 250px;
+                color: #00296B;
+                position: absolute;
+                top: 250px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 100px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                top: 105px;
+                left: 220px;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 183px;
+                margin-left: 900px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 50px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .only-display-on-mobile {
+                display: none;
+            }
+
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header-box {
+                width: 100%;
+                height: 100px;
+                background-color: #e2e2e2;
+            }
+
+
+            .only-display-on-mobile {
+                display: none;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .logo {
+                margin: auto;
+                width: 280px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 18px;
+                width: 100%;
+                height: auto;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+                color: #FFFFFF;
+                width: 650px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            .video {
+                text-align: center;
+                margin-bottom: 12%;
+                margin-top: 3%;
+            }
+
+            .introduction {
+                height: 600px;
+                background-position: center;
+                background-image: url(./images/rabbit.png);
+                background-repeat: no-repeat;
+                background-size: 73%;
+                text-align: center;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 28px;
+                color: #171a4d;
+                width: 330px;
+                text-align: justify;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 17% 1% 17% 13%;
+                overflow: auto;
+                height: 300px;
+            }
+
+            #author-moon {
+                margin-top: 80px;
+                margin-left: 100px;
+                width: 180px;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 65px;
+                margin-top: 14px;
+                margin-left: 157px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 190px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 100px;
+            }
+
+            .author>img {
+                position: absolute;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 25px;
+                top: 160px;
+            }
+
+            .author>p3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 105px;
+                display: inline-block;
+            }
+
+            .wave {
+                margin: 40px auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 450px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 320px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 320px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 460px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 460px;
+                height: auto;
+                margin: 10px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 430px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 650px;
+                height: 340px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 45px;
+            }
+
+            #video-text {
+                vertical-align: middle;
+                height: auto;
+                margin: 8% 100px 8% 100px;
+                width: 350px;
+            }
+
+            .related-item {
+                width: 200px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+
+            .related-item>img {
+                width: 155px;
+                height: 110px;
+                border-radius: 10px;
+                position: absolute;
+                top: 80px;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                width: 150px;
+                color: #00296B;
+                position: absolute;
+                top: 160px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                top: 100px;
+                left: 130px;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 175px;
+                border-left: 0.5px solid #e2e2e2;
+                margin-left: 580px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 40px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .header-box {
+                width: 100%;
+                height: 70px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 170px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-top: 30px;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+                color: #FFFFFF;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .video {
+                text-align: center;
+                margin-bottom: 12%;
+                margin-top: 9%;
+            }
+
+            .introduction {
+                height: 600px;
+                background-position: center;
+                background-image: url(./images/rabbit_for_mobile.png);
+                background-repeat: no-repeat;
+                background-size: 88%;
+                text-align: center;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 30px;
+                color: #171a4d;
+                width: 200px;
+                text-align: justify;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 55% 1% 26% 20%;
+                overflow: auto;
+                height: 250px;
+            }
+
+            #video-text {
+                vertical-align: middle;
+                height: auto;
+                margin: 8% 100px 8% 100px;
+                width: 350px;
+            }
+
+            #author-moon {
+                vertical-align: middle;
+                height: auto;
+                margin: 100px auto auto auto;
+                width: 110px;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 45px;
+                margin: 15px auto auto auto;
+
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 148px;
+                height: 180px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin: 5px auto auto auto;
+            }
+
+            .author>img {
+                position: absolute;
+                left: 15px;
+                top: 10px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 87px;
+                top: 25px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 155px;
+            }
+
+            .author>p3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 87px;
+                top: 110px;
+                display: inline-block;
+            }
+
+            .wave {
+                margin: 40px auto 20px auto;
+                width: 150px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: calc(310/375*100%);
+                margin: 40px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 280px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 280px;
+                height: auto;
+                margin-left: auto;
+                margin-top: 30px;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 100%;
+                margin: 40px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .infobox {
+                width: 310px;
+                height: 480px;
+                background-color: #D5E5FF;
+                margin: 60px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: stretch;
+                margin-bottom: 80px;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 50px;
+                position: absolute;
+                top: 15px;
+                left: 25px;
+            }
+
+            .related-item {
+                padding-left: 25px;
+            }
+
+            /*不知分隔線可以寫哪*/
+            .related-item>img {
+                width: 110x;
+                height: 75px;
+                margin-top: 75px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                width: 140px;
+                color: #00296B;
+                position: absolute;
+                display: inline-block;
+                right: 15px;
+                margin-top: 75px;
+            }
+
+            .sheep {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin: 10px auto;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 272px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 120px;
+                top: 50px;
+                left: 50px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 80px;
+                height: 183px;
+                margin-left: 235px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 20px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+            .only-display-on-non-mobile {
+                display: none;
+            }
+
+            .only-display-on-mobile {
+                display: block;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="header-box">
+            <a href="https://zh.wikipedia.org/wiki/%E8%A9%B9%E5%96%AC%E6%84%89"></a>
+            <div class="logo">
+                <img src="./images/logo-horizontal.png">
+            </div>
+            </a>
+        </div>
+        <h2>夢境VCR</h2>
+        <h1>「瘋」街供兒童遊戲　北市跟進簡化申請程序</h1>
+        <div style="text-align:center;">
+            <img src="./images/Line 16.png" style="width: 75%;">
+        </div>
+
+        <div class="introduction">
+            <figcaption>說到大馬路，你會想到什麼呢？<br>
+                ：遊覽車、公車、大卡車、小客車、機車、腳踏車...<br>
+                好了好了...想想不是車子的！<br>
+                ：紅燈、綠燈、黃燈、右轉燈...<br>
+                噢，想想跟人有關的！<br>
+                ：呃...遊行、抗議、造勢？<br>
+                齁，你很沒創意欸！是「遊樂場」啦！<br>
+                ：蛤？<br><br>
+                新北市風呂社區和還我特色公園行動聯盟等單位，於9月29日共同舉辦第一屆「瘋北大兒童上街趣」，封街讓馬路變成了遊樂場。此外也設計紙箱創作、彩色泡泡多款有趣活動，吸引眾多家庭前來參與玩耍。<br>
+            </figcaption>
+        </div>
+        <div style="text-align: center;">
+            <span style="color: blanchedalmond; text-align: center;">即將為您播放的是，請見VCR！</span>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" class="only-display-on-non-mobile"
+                src="https://www.youtube.com/embed/0mtNrw6tQ20" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="100%" height="300px" class="only-display-on-mobile"
+                src="https://www.youtube.com/embed/0mtNrw6tQ20" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!--月亮暫-->
+        <div id="author-moon">
+            <img src="./images/Frame.png" style="width: 75%; vertical-align: middle;">
+        </div>
+        <div id="author-moon-line"></div>
+        <div class="author">
+            <img src="./images/shuyu_photo.jpg" style="position: absolute; border-radius: 50%; width: 60px;">
+            <p1>劉書妤</p1>
+            <img src="./images/ho_photo.jpg" style="position: absolute; border-radius: 50%; width: 60px;
+            left: 20px;
+            top: 90px;">
+            <p3>何昀儒</p3>
+            <p2>2019/10/03 16:14:25</p2>
+
+        </div>
+        <div class="wave">
+            <img src="./images/wave.png">
+        </div>
+        <p>孩童在封街的馬路上玩鬧，拿著水槍到處奔跑。第一屆瘋北大兒童上街趣9月29日在新北市大義路盛大舉辦，吸引眾多家庭一同前來參加。主辦單位風呂社區主委池元正說：「現今小朋友都在家玩3C產品，希望藉這個活動讓家長帶小孩一起上街玩。」
+        </p>
+        <p>此次活動的協辦單位——還我特色公園行動聯盟（以下簡稱特公盟）長期致力於倡議兒童遊戲權，希望政府和民間能重視遊戲空間對兒童發展的重要性，也期待藉由「封路遊戲場」改善都市缺乏空間建造公園的問題。而以往舉辦兒童遊戲封街的程序繁複，主辦單位須分別向各局處提出申請，不過近期，台北市政府通過「台北市兒童街道遊戲活動執行計畫」，法案於10月1日上路後，體育局將成為單一窗口，提供街道遊戲的申請服務。特公盟常務理事李玉華說明：「未來體育局將變成唯一申請窗口，申請手續也更簡便。」他也表示希望新北市或其他縣市可以跟進。<p>根據「OURs都市改革組織」資料指出，在台北市市長柯文哲的首次任期內共興建了2萬487戶社宅，但連任後，他卻說：「台北市空屋多，所以不用再蓋社宅。」此後只會再興建1807戶。該說法明顯不符2014年他所提出的政見：四年任期內興建2萬戶、八年共5萬戶的社宅。
+        </p>
+        <div class="tender-conversation-right">
+            <img src="./images/conversation-5.png">
+        </div>
+        <p>隨著都市化擴張，越來越多孩童沒機會接觸寬闊的戶外遊戲空間，形成不同世代童年落差。家長陳成忠提到，以前會在門口跳繩和踢罐子，但現在孩子較沒有這種環境。另一位家長林侑萱則認為，封路遊戲場可以讓小朋友體驗更多不一樣的遊樂設施，進而促進小朋友發展
+        </p>
+        <p>都市化已成為現代發展趨勢，但透過封街遊戲，讓車水馬龍的街道化身孩童遊戲場所。此外，適逢政府立法簡化兒童街道遊戲的申請程序，也可望提高民眾自發性舉辦活動的意願，幫助平衡孩童的身心發展。</p>
+        <!--這邊超連結還沒加-->
+        <div class="infobox">
+            <span>再挑選一份助眠良物吧！</span>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href=&#39;./tender-article1.html&#39;">
+                <img src="./images/infobox-1.jpg">
+                <p>當人民進入刑事審判　國民法官制的挑戰與展望</p>
+            </div>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href=&#39;./tender-article1.html&#39;">
+                <img src="./images/infobox-2.jpg">
+                <p>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
+            </div>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href=&#39;./tender-article1.html&#39;">
+                <img src="./images/infobox-3.jpg">
+                <p>《送報伕》談勞動者　融舞蹈訴壓迫</p>
+            </div>
+        </div>
+        <img class="sheep" src="./images/running-sheep.png" style="display: block; margin: 10px auto;">
+        <div class="bottom">
+            <!--關於我們暫，這邊超連結還沒加-->
+            <img src="./images/about-us.png" style=" cursor:pointer;"
+                onclick="location.href=&#39;./tender-article2.html&#39;">
+            <div>
+                <span class="our-name">陳珮瑄</span>
+                <span class="our-name">蔡淳宇</span>
+                <span class="our-name">劉書妤</span>
+                <span class="our-name">吳曼嘉</span>
+                <span class="our-name">張佳琪</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
