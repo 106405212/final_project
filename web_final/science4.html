@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tender-article1</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #25334A;
+        }
+
+        /* desktop */
+        @media (min-width:1024px) {
+            .header-box {
+                width: 100%;
+                height: 110px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 23px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 1024px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 910px;
+                height: 26px;
+                position: relative;
+                left: 70px;
+                bottom: 60px;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 80px;
+                width:180px;
+            }
+#author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 55px;
+                margin-top: 7px;
+                margin-left: 180px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 100px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 115px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 70px;
+            }
+
+            .wave {
+                margin: 0 auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 590px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 350px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 350px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 590px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 580px;
+                height: 50px;
+                margin: 20px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 25px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 560px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 1000px;
+                height: 440px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 50px;
+            }
+
+            .related-item {
+                width: 320px;
+                padding-bottom: 40px;
+                padding-left: 55px;
+            }
+
+            .related-item>img {
+                width: 256px;
+                height: 168px;
+                border-radius: 10px;
+                position: absolute;
+                top: 110px;
+
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                width: 250px;
+                color: #00296B;
+                position: absolute;
+                top: 250px;
+            }
+
+            .sheep{
+                width:500px;
+                height:auto;
+                display:block;
+                margin-top:10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 100px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 200px;
+                top: 105px;
+                left: 220px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 183px;
+                margin-left: 900px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 50px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+            .comment{
+                width: 590px;
+                margin: 45px auto;
+                background-color:  #0077B6;
+                padding: 7px 10px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header-box {
+                width: 100%;
+                height: 100px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 280px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 18px;
+                width: 100%;
+                height: auto;
+            }
+
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+                color: #FFFFFF;
+                width: 650px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 768px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 768px;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 630px;
+                height: auto;
+                position: relative;
+                left: 75px;
+                bottom: 55px;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 70px;
+                width:180px;
+            }
+
+#author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 65px;
+                margin-top: 7px;
+                margin-left: 157px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 100px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 100px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 25px;
+                top: 70px;
+            }
+
+            .wave {
+                margin: 40px auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 450px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 320px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 320px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 460px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 460px;
+                height: auto;
+                margin: 10px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 430px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 650px;
+                height: 340px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 45px;
+            }
+
+            .related-item {
+                width: 200px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+
+            .related-item>img {
+                width: 155px;
+                height: 110px;
+                border-radius: 10px;
+                position: absolute;
+                top: 80px;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                width: 150px;
+                color: #00296B;
+                position: absolute;
+                top: 160px;
+            }
+
+            .sheep{
+                width:500px;
+                height:auto;
+                display:block;
+                margin-top:10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 200px;
+                top: 100px;
+                left: 130px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 175px;
+                border-left: 0.5px solid #e2e2e2;
+                margin-left: 580px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 40px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+            .comment{
+                width: 450px;
+                margin: 45px auto;
+                background-color:  #0077B6;
+                padding: 7px 10px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .header-box {
+                width: 100%;
+                height: 70px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 170px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-top: 30px;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+                color: #FFFFFF;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 100%;
+                margin: 30px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 20px;
+                margin-left: 90px;
+                width: 110px;
+                height: auto;
+            }
+
+#author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 45px;
+                margin-left: 140px;
+                margin-top: 5px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 148px;
+                height: 90px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 90px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 15px;
+                top: 10px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 80px;
+                top: 25px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 62px;
+            }
+
+            .wave {
+                margin: 40px auto 20px auto;
+                width: 150px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: calc(310/375*100%);
+                margin: 40px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 280px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 280px;
+                height: auto;
+                margin-left: auto;
+                margin-top: 30px;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 100%;
+                margin: 40px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 300px;
+                height: 60px;
+                margin: 5px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 280px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 310px;
+                height: 480px;
+                background-color: #D5E5FF;
+                margin: 20px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 60px auto;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 50px;
+                position: absolute;
+                top: 15px;
+                left: 25px;
+            }
+
+            .related-item {
+                padding-left: 25px;
+            }
+
+            /*不知分隔線可以寫哪*/
+            .related-item>img {
+                width: 110x;
+                height: 75px;
+                margin-top: 75px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                width: 140px;
+                color: #00296B;
+                position: absolute;
+                display: inline-block;
+                right: 15px;
+                margin-top: 75px;
+            }
+
+            .sheep {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin: 10px auto;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 272px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 120px;
+                top: 50px;
+                left: 50px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 80px;
+                height: 183px;
+                margin-left: 235px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 20px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+            .comment{
+                width:  calc(310/375*100%);
+                margin: 40px auto;
+                background-color:  #0077B6;
+                padding: 7px 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="header-box">
+            <div class="logo" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="../web_final/icon/logo-horizontal.png">
+            </div>
+        </div>
+        <h2>強制入眠</h2>
+        <h1>「感SENSE」結合AI深度學習　打造居家4D觀影新體驗</h1>
+        <div class="first-img">
+            <img src="photo/4.1.jpg">
+            <div class="first-figcaption-box">
+                <figcaption>「感SENSE」回饋裝置，由上至下內裝素材分別為：夜光爬蟲燈、超音波震盪片以及冷、暖風扇，底下半球形則是共振式喇叭。　圖／張佳琪攝
+                </figcaption>
+            </div>
+        </div>
+        <!--月亮暫-->
+        <img id="author-moon" src="../web_final/icon/Frame.png">
+        <div id="author-moon-line"></div>
+        <div class="author">
+            <img src="photo/chi_photo.jpg">
+            <p1>張佳琪</p1>
+            <p2>2019/11/14 00:36:24</p2>
+        </div>
+        <div class="wave">
+            <img src="../web_final/icon/wave.png">
+        </div>
+        <p>數位時代來臨，大眾的觀影體驗不再受限於視覺與聽覺。淡江大學電機工程學系副教授周建興指導該系學生許哲儒，研發居家4D觀影裝置「感SENSE」，外觀如同喇叭，只消將其連接電腦，看影片時便能隨場景變換體驗暖、涼、熱、潤、味、震等不同感受。此裝置於3日獲得「2019第24屆大專院校資訊應用服務創新競賽資訊應用組五」第三名。 
+        </p>
+        <p>「感SENSE」是桌上型立體裝置，包含以<span style="padding-bottom: 1px;border-bottom: 2px solid #FFB703;">深度學習（註）</span>打造能夠辨別影像物件的程式軟體，和給予觀影者觸覺、味覺的回饋硬體。以3D列印的六個白色圓筒及兩個半球形底座為外殼，內部包含會發熱的「夜光爬蟲燈」、「冷暖風扇」、製作水霧的「超音波震盪片」，以及「共振式喇叭」。程式首先辨識影片包含的物件，而後根據結果釋出水霧、香氛、啟動風扇或開啟照明等，加深使用者在觀影時的感受。
+        </p>
+        <div class="comment">
+            <figcaption style="text-align: left; ">註：深度學習為人工智能（Artificial Intelligence, AI）的分支，程式分析資料後建立模型，最終給予使用者需要的答案。</figcaption>
+        </div>
+        <img class="tender-conversation-left" src="../web_final/icon/conversation-4.png">
+        <p>其中，共振式喇叭能夠產生震動，利用吸附物品便能產生震動的特性，將其安設在桌上便能發出極大震動與音效。許哲儒表示，他選擇較大瓦數的共振式喇叭，以得到較大的震動效果，他使用課桌椅測試，搖晃的程度大到超乎想像。
+        </p>
+        <p>現有提升觀影體驗的技術包括虛擬實境（Virtual Reality, VR）及配有4D裝置的電影院，但目前VR設備昂貴，且仍是針對視覺升級。因此，許哲儒往觸覺與味覺發想，研發「感SENSE」，達到在家就能觀賞4D電影的效果，他舉例，影片中出現飛機時，風扇就會轉動，而畫面出現水時裝置就會釋放水霧。
+        </p>
+        <figure class="img-in-article">
+            <img src="photo/4.2.jpg">
+        </figure>
+        <div class="figcaption-in-article">
+            <figcaption>「感SENSE」回饋裝置，由上至下內裝素材分別為：夜光爬蟲燈、超音波震盪片以及冷、暖風扇，底下半球形則是共振式喇叭。　圖／張佳琪攝</figcaption>
+        </div>
+        <div class="tender-conversation-right">
+            <img src="../web_final/icon/conversation-3.png">
+        </div>
+        <p>許哲儒說：「因為就讀比較偏重硬體學習的科系，平常較少接觸軟體。」因此軟體在製作的過程中嘗試比較多次。周建興則表示，設計上需要考量外觀、功能、尺寸及成本，融合各項條件是此次的挑戰。
+        </p>
+        <figure class="img-in-article">
+            <img src="photo/4.3.jpg">
+        </figure>
+        <div class="figcaption-in-article">
+            <figcaption>影片中出現火焰的場景時，「感SENSE」會啟動最上方燈具，讓觀影者體驗有如置身火焰旁的感覺。　圖／張佳琪攝</figcaption>
+        </div>
+        <p>「感SENSE」的成本大約為高階電競滑鼠的價格，許哲儒說：「此次發明過程將許多現成的材料拆除、組合。」目前仍在測試階段，未來若大量生產，成本將會降低。周建興提到，未來可能利用AI技術更精準地分析電影的場景，讓硬體裝置啟動的時機更為精準。 試用者、淡江電機工程學系許庭展則分享，自己曾有觀看4D電影的經驗，而「感SENSE」不用到電影院就能體驗相似的觀影感受，並對此裝置的水霧體驗特別印象深刻。</p>
+        <!--暫時超連結要改-->
+        <div class="infobox">
+            <span>再挑選一份助眠良物吧！</span>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="photo/3.1.jpg">
+                <p>氣體監測結合警示設計　防下水道工人缺氧中毒</p>
+            </div>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="photo/infobox-a.png">
+                <p>遏止網軍帶風向　PTT審查系統「糾」出異常帳號</p>
+            </div>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="photo/1.1.jpg">
+                <p>防誤食禁藥　APP增中藥資訊</p>
+            </div>
+        </div>
+        <!--羊暫-->
+        <img class="sheep" src="icon/running-sheep.png" style="display:block;margin:10px auto;">
+        <div class="bottom">
+            <!--關於我們，暫時超連結要改-->
+            <img src="icon/about-us.png" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <div>
+                <span class="our-name">陳珮瑄</span>
+                <span class="our-name">蔡淳宇</span>
+                <span class="our-name">劉書妤</span>
+                <span class="our-name">吳曼嘉</span>
+                <span class="our-name">張佳琪</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
