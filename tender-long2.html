@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「新」火相傳：延續母語價值　新住民語文課程的理想與現實－還醒者</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #455D85;
+        }
+
+        /* desktop */
+        @media (min-width:1024px) {
+            .header-box {
+                width: 100%;
+                height: 110px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 23px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .preface-box {
+                background: #5D79A7;
+                width: 590px;
+                height: auto;
+                margin: 60px auto;
+                border-left: 9px solid #E0E0E0;
+                padding-left: 45px;
+
+            }
+
+            .preface-box>figcaption {
+                margin: 20px auto;
+                font-size: 18px;
+                line-height: 33px;
+                display: inline-block;
+                width: 500px;
+                text-align: left;
+            }
+
+            .first-img {
+                width: 1024px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #longnews-author {
+                width: 250px;
+                margin-left: 100px;
+            }
+
+            .wave {
+                margin: 0 auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 590px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 350px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 350px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 590px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 580px;
+                height: auto;
+                margin: 20px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 25px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 560px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 1000px;
+                height: 440px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 50px;
+            }
+
+            .related-item {
+                width: 320px;
+                padding-bottom: 40px;
+                padding-left: 55px;
+            }
+
+            .related-item>img {
+                width: 256px;
+                height: 168px;
+                object-fit: cover;
+                border-radius: 10px;
+                position: absolute;
+                top: 110px;
+
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                width: 250px;
+                color: #00296B;
+                position: absolute;
+                top: 250px;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 100px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                top: 105px;
+                left: 220px;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 183px;
+                margin-left: 900px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 50px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header-box {
+                width: 100%;
+                height: 100px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 280px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 18px;
+                width: 100%;
+                height: auto;
+            }
+
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+                color: #FFFFFF;
+                width: 650px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .preface-box {
+                background: #5D79A7;
+                width: 400px;
+                height: auto;
+                margin: 60px auto;
+                border-left: 6px solid #E0E0E0;
+                padding-left: 40px;
+
+            }
+
+            .preface-box>figcaption {
+                margin: 20px auto;
+                font-size: 17px;
+                line-height: 33px;
+                display: inline-block;
+                width: 320px;
+                text-align: left;
+            }
+
+            .first-img {
+                width: 768px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 768px;
+                height: auto;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #longnews-author {
+                width: 200px;
+                margin-left: 80px;
+            }
+
+            .wave {
+                margin: 40px auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 450px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 320px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 320px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 460px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 460px;
+                height: auto;
+                margin: 10px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 430px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 650px;
+                height: 340px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 45px;
+            }
+
+            .related-item {
+                width: 200px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+
+            .related-item>img {
+                width: 155px;
+                height: 110px;
+                object-fit: cover;
+                border-radius: 10px;
+                position: absolute;
+                top: 80px;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                width: 150px;
+                color: #00296B;
+                position: absolute;
+                top: 160px;
+            }
+
+            .sheep {
+                width: 400px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                top: 100px;
+                left: 130px;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 175px;
+                border-left: 0.5px solid #e2e2e2;
+                margin-left: 580px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 40px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .header-box {
+                width: 100%;
+                height: 70px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 170px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-top: 30px;
+                text-align: center;
+                color: #FFF6C6;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+                color: #FFFFFF;
+                margin: 20px auto;
+                text-align: center;
+                width: 80%;
+            }
+
+            h3 {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 45px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+                width: 90%;
+            }
+
+            .preface-box {
+                background: #5D79A7;
+                width: 270px;
+                height: auto;
+                margin: 40px auto;
+                border-left: 5px solid #E0E0E0;
+                padding-left: 30px;
+
+            }
+
+            .preface-box>figcaption {
+                margin: 20px auto;
+                font-size: 15px;
+                line-height: 30px;
+                display: inline-block;
+                width: 200px;
+                text-align: left;
+            }
+
+            .first-img {
+                width: 100%;
+                margin: 30px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #longnews-author {
+                width: 150px;
+                margin-left: 100px;
+                margin-top: 30px;
+            }
+
+            .wave {
+                margin: 40px auto 20px auto;
+                width: 150px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: calc(310/375*100%);
+                margin: 40px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 280px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 280px;
+                height: auto;
+                margin-left: auto;
+                margin-top: 30px;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 100%;
+                margin: 40px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 300px;
+                height:auto;
+                margin: 5px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 280px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 310px;
+                height: 480px;
+                background-color: #D5E5FF;
+                margin: 60px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: stretch;
+                margin-bottom: 80px;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 50px;
+                position: absolute;
+                top: 15px;
+                left: 25px;
+            }
+
+            .related-item {
+                padding-left: 25px;
+            }
+
+            .related-item>img {
+                width: 110px;
+                height: 75px;
+                object-fit: cover;
+                margin-top: 75px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                width: 140px;
+                color: #00296B;
+                position: absolute;
+                display: inline-block;
+                right: 15px;
+                margin-top: 75px;
+            }
+
+            .sheep {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 272px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 120px;
+                top: 50px;
+                left: 50px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 80px;
+                height: 183px;
+                margin-left: 235px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 20px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header-box">
+        <!--暫定超連結-->
+        <div class="logo" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <img src="../web_final/icon/logo-horizontal.png">
+        </div>
+    </div>
+    <h2>溫柔助眠</h2>
+    <h1>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</h1>
+    <div style="text-align:center;">
+        <img src="../web_final/icon/Line 16.png" style="width: 92%;">
+    </div>
+    <div class="preface-box">
+        <figcaption>
+            「同學我們再唱一次，唱到你的數字就要舉起來喔！Satu、Dua、Tiga…」北新國民小學的馬來語老師手拿數字教具，唱著輕快的歌曲，學生也聚精會神地聽著指示，合力「舉」出一首完整無誤的數字歌。《十二年國民基本教育課程綱要總綱》（以下簡稱108課綱）於去年8月正式上路，其中國小的語文領域，除了原有的本土語文外（閩南語、客語、原住民族語），新增七國東南亞地區官方語言供學童選修。如今新住民語文課程開設即將屆滿一年，其成效為何？新二代可以順利學習「母語」嗎？
+        </figcaption>
+    </div>
+    <div class="first-img">
+        <img src="../web_final/tender-photo/tender-long-2.1.png">
+    </div>
+    <img id="longnews-author" src="../web_final/icon/moon-author-1.png">
+    <div class="wave">
+        <img src="../web_final/icon/wave.png">
+    </div>
+    <h3>東南亞移民比例高　新住民語首入國小必選修</h3>
+    <p>隨著全球化趨勢，東南亞各國與其他國家新住民成為台灣社會的重要成員。根據教育部「新住民子女就讀國中小人數分布概況統計」，民國108年新二代國小學生數為9萬1388人，扣除使用中文的中國大陸、香港、澳門，新二代以父母一方為東南亞籍居多，比例高達91％，尤以越南、印尼籍人數位居前兩名。因此教育部依據108課綱開設新住民語文課程，希望建立新住民子女傳承家庭語言，以及文化多樣性的學習環境，也幫助孩童認識、接納多元文化，培養國際素養。
+    </p>
+    <p>每年5月下旬，學校會發放「語文選修意願調查表」，作為校方辦理下一學年度本土語言課程之參考。去年因應108課綱上路，語言類別從原本的閩、客、原住民族語，擴增越南、泰國、馬來西亞、菲律賓、柬埔寨、緬甸、印尼等七種東南亞語，提供國小新生選擇，一週開設一節課，國中生則可依興趣於彈性學習課程選修。
+    </p>
+    <div class="tender-conversation-right">
+        <img src="../web_final/icon/conversation-8.png">
+    </div>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.2.png">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>新北市政府教育局編撰的新住民語文學習教材，去年已完成編輯七國語言，共126冊之教材。　圖／張佳琪攝</figcaption>
+    </div>
+    <p>除了紙本教材，教育部國民及學前教育署（以下簡稱國教署）也委託國立中央大學及財團法人資訊工業策進會（以下簡稱資策會）製作新住民語文數位學習教材，目前已完成第一至八冊，內容包含七國教材的課文雙語配音、互動問答及歌曲吟唱等數位化內容，建置在國教署「新住民子女教育資訊網」平台的數位課程專區。
+    </p>
+    <p>新住民語文課程提供新二代學習母語的機會，而為避免教育資源落差，教育部將新住民語教師資源比照本土語言辦理，只要有一名小學生選修，學校便須開課，師資經費則由教育部補助。至於師資部分，目前採雙軌制，以教學支援人員（以下簡稱教支人員）為主，正式師資為輔。至於偏鄉小學不易招聘教師，教育部也與「小校聯盟」合作，提供雲端共學、線上學習等服務。
+    </p>
+    <h3>新住民語學習路阻礙多　家長意識和應用環境成關鍵</h3>
+    <p>為使新住民子女能更融入台灣社會，雖學校開設東南亞語言選修課，部分新住民家長仍希望孩童選修客語、閩南語。在台生活的印尼新住民媽媽蓮雅如表示，自己通常使用中文與家人溝通，而不會使用母語，加上他的孩子未來沒有打算在印尼發展，因此認為不需要學習印尼語。南投縣新媳婦關懷協會理事長、同時也是立法委員羅美玲舉例，客家莊的跨國婚姻家庭中，長輩會希望孩子選修客語，而家裡主要也是以客語溝通，一旦缺乏使用該語言的環境，新二代便不一定會學習新住民語。
+    </p>
+    <p>台越文化協會理事長蔣為文指出，在初期推廣新住民語時，有些長輩無法適應多元文化，導致新住民配偶及其子女沒有機會接觸新住民語。他表示從小學習兩種語言對孩子較沒有負擔，且能讓孩子在小時候就在雙語或三語的環境下成長，無須等到國中才修習第二外語，因此應以鼓勵的方式讓家中長輩接納外來文化。近年來，隨著新南向政策的推動，家中成員也逐漸以較為正面的角度看待新住民，但蔣為文表示仍有進步空間，還有賴政府營造接納多元文化的社會氣氛。
+    </p>
+    <img class="tender-conversation-left" src="../web_final/icon/conversation-2.png">
+    <p>高級中等以下學校課程審議會大會學生代表委員、同時也是新二代的劉千萍說：「在我童年的時候，家裡並沒有很鼓勵我接觸跟越南有關的事情，就連食物也是，所以整個大氛圍並沒有覺得學媽媽母國的話是一件重要的事情。」小時候他只要發脾氣、情緒不好的時候，其他長輩也會開玩笑地認為是他吃太多越南菜的緣故，導致劉千萍排斥接觸跟越南有關的東西。直到大學時期一門通識課上所播放的紀錄片《失婚記》，劇情使他看見媽媽的影子，也讓劉千萍萌生學習越南語的念頭，並開始接觸新住民的議題，甚至以新住民身份主動競選課審會代表。
+    </p>
+    <p>倘若新二代順利獲得家長支持選修母語，劉千萍指出，「環境」是跨國婚姻家庭的孩子學習母語最大的阻礙，因為該語言通常不會是家庭常用的溝通工具。另一方面，家人對於「在家裡講外國話」的態度，也會影響到孩子對於學習該語言必要性的判斷。北新國小新住民語指導教師林綺琴也補充，有些家長深怕孩童學習新住民語後，會耽誤英語的訓練。他鼓勵家長不妨將學習多元語言當作興趣的種子，讓孩子未來欲深化特定語言能力時，有更豐富的選擇。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.3.png">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>學習新住民語需要生活化的情境，新北市新店區北新國民小學新住民語指導教師林綺琴認為，假如爸媽一方是新住民的話，老師會鼓勵學生在家裡盡量開口說，從最基本的吃飯、問候開始，將語言學習融入生活中。　圖／張佳琪攝</figcaption>
+    </div>
+    <h3>邁向混齡教育　各校發展大不同</h3>
+    <p>除了環境和家庭因素外，新住民語文課程雖才實行一年，不少學校已經預見後續推動的問題。教育部針對教學分組模式並未有明確規定，各校可視情況進行混齡教學。已經推行新住民語課程多年的北新國小，一直以課後社團方式開設新住民語學習課程。新課綱上路後，林綺琴說：「教支老師一直在反應，完蛋了，我的教室二年級開始會加入一年級沒有上，等到二年級才來學的人，我要怎麼上？」北新國小每年會重新調查學童欲選修之語言類別，但學生不一定會在六年裡完整學習一種語言，不同學齡的兒童，學習能力也不一樣。面對不能增聘老師，也無法強制學生從一而終地學習某種語言的現況，北新國小目前還在琢磨未來課程的實行方式。
+    </p>
+    <div class="tender-conversation-right">
+        <img src="../web_final/icon/conversation-3.png">
+    </div>
+    <p>同樣開設新住民語課程已有八年的東安國民小學則是依照「學習程度」進行混齡分班。東安國小校長、也是新住民語文課程綱要研修小組委員的黃木姻則表示，新住民語文課程勢必走向混齡教學，老師須因應班上不同年級的孩子，有「差異化教學」的能力。他建議透過分組合作式學習，或是給予每個孩子不同的學習目標，提升學習效果。國立臺北教育大學社會與區域發展學系副教授王大修舉例，過去他曾觀察到一位越南語老師實際進行混齡教學時，學生除了能學習語言，同時能直接應用於文化情境。因越南注重長幼輩分秩序，混齡教學便能讓學生實際應用敬語。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.4.png">
+    </figure>
+    <div class="figcaption-in-article" >
+        <figcaption>新住民語文教師以字卡輔助，增加孩童對語言的理解與課堂趣味性。　圖／徐品蓁攝</figcaption>
+    </div>
+    <h3>站上教學第一線　教支人員聘任方式仍待議</h3>
+    <p>即便解決上述教育制度問題，教學品質也難以把關。由於具正式新住民語教學資格的人員不足，為了趕上各地方師資需求，新住民語文課程的師資初期規劃以教支人員為主。根據《教育部國民及學前教育署補助推動新住民語文教學支援人員培訓要點》，只要年滿20歲，並符合相關規定，即可報名參與培訓課程共36節，一節一小時。完成培訓課程，並經過教學演示評定合格者，便可取得教支人員資格，但其取得證書的過程卻屢遭質疑。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.5.png">
+    </figure>
+    <p>蔣為文認為經過36小時的課程便可考取證書的規畫，其實不夠完善。他以在台教授外國人華語為例，在台灣若要正式教授外國人華語，必須先修習大學設立之華語教學學程，除了修習20個學分外，還要接受二至三年的實習，才可取得證書。蔣為文建議新住民語教學證書培訓辦法應比照辦理，若培訓課程不夠完整扎實，將造成教師程度參差不齊。
+    </p>
+    <img class="tender-conversation-left" src="../web_final/icon/conversation-4.png">
+    <p>社團法人台灣新移民協會創會長麥玉珍表示，不少已經拿到教支證書的姊妹在母國沒有語言教學背景，較無法掌握文法正確性和教學靈活度，導致許多新住民媽媽對現有的母語教學品質存疑，讓孩子選修母語的比例自然不高。他提出，教育部應擬定更嚴謹的教支人員篩選標準。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.6.png">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>社團法人台灣新移民協會創會長麥玉珍期盼教育部未來能夠建立篩選教學支援人員之標準，以達到穩定的教學品質。　圖／張佳琪攝</figcaption>
+    </div>
+    <p>對於相關質疑，教育部國民及學前教育署原民特教組新住民子女及少數族群教育科科長陳碧玉回應，目前政府有相關配套措施，如在暑假期間開設職前教育研習，以及每班新住民語文課程配置一位由校內正式教師選出的教學指導教師，針對新住民語文教學教師提供諮詢輔導。另外，政府也持續開設進階班與回流教育班，希望加強教支人員在課程教學、班級經營與危機處理的能力。
+    </p>
+    <p>目前全台共有2746名新住民語文教支人員，因教育部規定每所小學一週只能開設一節該語言課程，因此教支人員需在不同學校兼課，甚至擁有其他兼職工作，才能維持生活所需。黃木姻說：「教支人員收入真的太低，國小鐘點費每節320元，他如果要上15節，一個禮拜要東奔西跑15所學校，月收入甚至沒有2萬塊，是很可怕的事情。」教授越南語的教支人員洪金枝認為，每週老師來回奔波教學，不但辛苦也浪費時間，「在這樣的過程中耗費體力，也會影響到教支人員的教學意願，無法提供孩子良好的教學品質與師生互動。」針對前述狀況導致教支人員教學意願不高，陳碧玉也說明未來新住民語文課程將逐年級實施，政府也會督導縣市主動媒合教支人員與協調跨校排課，並完備跨校共聘作業，以增加教支人員的授課節數和穩定收入。
+    </p>
+    <h3>學習不受限　遠距教學盼消弭城鄉教育資源落差</h3>
+    <p>為解決偏鄉小學新住民語師資不足問題，使全台各地的新住民學生皆能享有學習平權，由資策會教育研究所創建的「小校聯盟」，打破地域限制，發展遠距互動的教學模式。自106年9月起，國教署與資策會教研所合作，試行「新住民語文課程遠距教學計畫」，推動新住民語言的直播共學課程。
+    </p>
+    <p>108學年度全國有110校參與遠距教學，開設雲端班88班，共計303位學生修習。而資策會教研所從近兩年的觀察發現，當不斷有新學生加入課程時，學生程度、年齡不一，會造成老師在教學上的困難。資策會教研所助理規劃師陳奕華表示，若要解決這樣的問題，將會需要增加班數與師資，會造成聘請實體師資的學校很大的負擔。陳奕華進一步補充，實體教學在聘請師資時，需處理教支人員的教師證、勞健保及共聘，程序複雜。若參與資策會建立的直播共學模式，由他們負責師資聘用，學校只需提供教學設備及學習環境即可，較能減輕校方負擔。
+    </p>
+    <p>透過科技學習的直播課程也曾遭外界懷疑無法帶來良好的學習效率和互動性，「遠距也可以做得非常活潑，手作東西也會有，比如老師會帶學生做越南斗笠、國花、泰國水燈。」陳奕華補充，只要事先與隨班助教準備好教材，教支人員以線上直播也能進行手作教學。資策會教研所創新學習中心副分析師蔡政穎也指出，根據107學年試行教育學生與教師的期末回饋問卷結果，多數學生喜歡此種學習方式，也有繼續修課的意願。他也分享，曾有老師提到，學生戴上耳機後，因外在因素影響力降低，在課堂中反而更專心，因此遠距帶來的學習樣態也是資策會教研所會繼續觀察的方向。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.7.png">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>財團法人資訊工業策進會教育研究所創新學習中心副分析師蔡政穎說明，此次疫情帶來的影響也提升大眾對於遠距教學方式的接受度。　圖／阮珮慈攝</figcaption>
+    </div>
+    <p>「遠距跟實體應該是要相輔相成的。」蔡政穎說明，遠距僅是解決偏鄉聘師不易的一種方式，實體教學對老師與學生的班級經營仍十分重要。因此資策會教研所目前也會安排學生與老師見面互動的機會，如期末的實體成果會或圖文競賽等活動，希望能融合遠距與實體兩種教學方式，也期待未來各縣市可規劃直播共學的學習方式，不只由資策會教研所推行，以擴展各方教學資源。
+    </p>
+    <h3>新住民語課程傳達文化價值　盼建多元友善社會</h3>
+    <p>曾有新住民孩子對麥玉珍提出疑問：「為什麼外國人的小孩叫做混血兒，我們叫做新二代？」當時是他第一次意識到這個問題，不過他鼓勵孩子以平常心面對，並為母親離鄉來台的勇氣感到驕傲。麥玉珍認為許多新二代家長對於東南亞近期經濟發展不夠理解，也不知道學習東南亞語可能帶來的經濟優勢。
+    </p>
+    <div class="tender-conversation-right">
+        <img src="../web_final/icon/conversation-5.png">
+    </div>
+    <p>為解決新住民家長因為語言不同、資訊來源管道較少或是政策宣傳不足等問題，教育部也採取加強社會宣導的行動，如要求各校在家長日、入學通知上宣導新住民語課程，落實調查家長意願，也鼓勵家長讓子女修習新住民語言課程。自109學年度起，教育部更將課綱文宣翻譯成七國語言，與語文選修意願調查表一起發送，讓家長們都能充分了解政策。麥玉珍強調，新住民語文課程政策還需仰賴學校、家長和老師相互溝通才能有更多發展，唯有建立新住民對自身族群的認同，在台灣的他們才願意傳承自己的文化。
+    </p>
+    <figure class="img-in-article">
+        <img src="../web_final/tender-photo/tender-long-2.8.png">
+    </figure>
+    <div class="figcaption-in-article">
+        <figcaption>每周二是北新國民小學的「母語日」，除了語言教學，也會藉由安排活動讓孩子體驗該國文化。　圖／張佳琪攝</figcaption>
+    </div>
+    <p>新住民語文課程協助學生增加尊重與欣賞多元文化的能力，並深化新二代自身的跨國文化成長背景優勢，提升競爭力。黃木姻認為，新住民語文課程不僅讓孩子學習語言、作為一項溝通工具，同時也能擴展他們的文化視野和國際觀，「他（學生）會發現每個國家都有它的特色，沒有誰落後、誰比較進步的問題。」他也提到，台灣人在選擇第二外語時會以國家區別語言的等級，但是語言從來沒有高低級之分。他期盼藉由新課綱的推動，改善台灣對東南亞長期的文化偏見，讓台灣成為一個包容尊重的多元社會。
+    </p>
+    <div class="infobox">
+        <span>再挑選一份助眠良物吧！</span>
+        <!--暫定超連結-->
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-long1.html'">
+            <img src="../web_final/tender-photo/tender-long-1.1.jpg">
+            <p>新時代的客語保存：科技、媒體與制度共尋本土語言出路</p>
+        </div>
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <img src="../web_final/tender-photo/tender-art-2.1.jpg">
+            <p>《送報伕》談勞動者　融舞蹈訴壓迫</p>
+        </div>
+        <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article3.html'">
+            <img src="../web_final/tender-photo/tender-art-3.1.jpg">
+            <p>移民火星　《不在這裡》演繹迷失狀態</p>
+        </div>
+    </div>
+    <img class="sheep" src="../web_final/icon/nick_murmur.png" style="display:block;">
+    <div class="bottom">
+        <!--暫定超連結-->
+        <img src="../web_final/icon/about-us.png" style=" cursor:pointer;"
+            onclick="location.href='./tender-article4.html'">
+        <div>
+            <span class="our-name">陳珮瑄</span>
+            <span class="our-name">蔡淳宇</span>
+            <span class="our-name">劉書妤</span>
+            <span class="our-name">吳曼嘉</span>
+            <span class="our-name">張佳琪</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
