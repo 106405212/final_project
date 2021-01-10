@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tender-article1</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        body {
+            background-color: #25334A;
+        }
+
+        /* desktop */
+        @media (min-width:1024px) {
+            .header-box {
+                width: 100%;
+                height: 110px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 23px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 50px;
+                color: #FFFFFF;
+                margin: 50px auto;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 1024px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 910px;
+                height: 26px;
+                position: relative;
+                left: 70px;
+                bottom: 60px;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 80px;
+                width: 180px;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 55px;
+                margin-top: 7px;
+                margin-left: 180px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 100px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 115px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 70px;
+            }
+
+            .wave {
+                margin: 0 auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 590px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 350px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 350px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 590px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 580px;
+                height: 50px;
+                margin: 20px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 25px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 560px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 1000px;
+                height: 440px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 50px;
+                position: absolute;
+                top: 30px;
+                left: 50px;
+            }
+
+            .related-item {
+                width: 320px;
+                padding-bottom: 40px;
+                padding-left: 55px;
+            }
+
+            .related-item>img {
+                width: 256px;
+                height: 168px;
+                border-radius: 10px;
+                position: absolute;
+                top: 110px;
+
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                width: 250px;
+                color: #00296B;
+                position: absolute;
+                top: 250px;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 100px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 200px;
+                top: 105px;
+                left: 220px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 183px;
+                margin-left: 900px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 50px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+            .comment {
+                width: 590px;
+                margin: 45px auto;
+                background-color: #0077B6;
+                padding: 7px 10px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .header-box {
+                width: 100%;
+                height: 100px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 280px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 18px;
+                width: 100%;
+                height: auto;
+            }
+
+
+            h2 {
+                font-size: 26px;
+                line-height: 40px;
+                font-weight: 500;
+                margin: 100px auto 50px auto;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+                color: #FFFFFF;
+                width: 650px;
+                margin: 0px auto;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 768px;
+                margin: 45px auto;
+            }
+
+            .first-img>img {
+                width: 768px;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 630px;
+                height: auto;
+                position: relative;
+                left: 75px;
+                bottom: 55px;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 25px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 10px;
+                margin-left: 70px;
+                width: 180px;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 65px;
+                margin-top: 7px;
+                margin-left: 157px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 168px;
+                height: 100px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 100px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 20px;
+                top: 15px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 88px;
+                top: 30px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 25px;
+                top: 70px;
+            }
+
+            .wave {
+                margin: 40px auto;
+                width: 250px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: 450px;
+                margin: 45px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 320px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 320px;
+                height: auto;
+                margin-left: auto;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 460px;
+                margin: 45px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 460px;
+                height: auto;
+                margin: 10px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 430px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 650px;
+                height: 340px;
+                background-color: #D5E5FF;
+                margin: 150px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                align-items: stretch;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 40px;
+                position: absolute;
+                top: 20px;
+                left: 45px;
+            }
+
+            .related-item {
+                width: 200px;
+                padding-bottom: 20px;
+                padding-left: 50px;
+            }
+
+            .related-item>img {
+                width: 155px;
+                height: 110px;
+                border-radius: 10px;
+                position: absolute;
+                top: 80px;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 26px;
+                width: 150px;
+                color: #00296B;
+                position: absolute;
+                top: 160px;
+            }
+
+            .sheep {
+                width: 500px;
+                height: auto;
+                display: block;
+                margin-top: 10px;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 290px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 200px;
+                top: 100px;
+                left: 130px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 126px;
+                height: 175px;
+                border-left: 0.5px solid #e2e2e2;
+                margin-left: 580px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 40px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+            .comment {
+                width: 450px;
+                margin: 45px auto;
+                background-color: #0077B6;
+                padding: 7px 10px;
+            }
+
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            .header-box {
+                width: 100%;
+                height: 70px;
+                background-color: #e2e2e2;
+            }
+
+            .logo {
+                margin: auto;
+                width: 170px;
+                height: auto;
+            }
+
+            .logo>img {
+                padding-top: 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                margin-top: 30px;
+                text-align: center;
+                color: #CEDDE4;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+                color: #FFFFFF;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .first-img {
+                width: 100%;
+                margin: 30px auto;
+            }
+
+            .first-img>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .first-figcaption-box {
+                background: rgba(0, 41, 107, 0.5);
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            #author-moon {
+                margin-top: 20px;
+                margin-left: 90px;
+                width: 110px;
+                height: auto;
+            }
+
+            #author-moon-line {
+                background-color: #FFFFFF;
+                border: 0.5px solid #FFFFFF;
+                transform: rotate(90deg);
+                width: 45px;
+                margin-left: 140px;
+                margin-top: 5px;
+            }
+
+            .author {
+                background-color: #C4C4C4;
+                width: 148px;
+                height: 90px;
+                border-radius: 19px;
+                display: flex;
+                position: relative;
+                margin-left: 90px;
+            }
+
+            .author>img {
+                position: absolute;
+                border-radius: 50%;
+                width: 55px;
+                left: 15px;
+                top: 10px;
+            }
+
+            .author>p1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 80px;
+                top: 25px;
+                display: inline-block;
+            }
+
+            .author>p2 {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 25px;
+                color: #4A3A34;
+                position: absolute;
+                left: 23px;
+                top: 62px;
+            }
+
+            .wave {
+                margin: 40px auto 20px auto;
+                width: 150px;
+                height: auto;
+            }
+
+            .wave>img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+                width: calc(310/375*100%);
+                margin: 40px auto;
+                text-align: justify;
+            }
+
+            .tender-conversation-left {
+                width: 280px;
+                height: auto;
+            }
+
+            .tender-conversation-right {
+                width: 280px;
+                height: auto;
+                margin-left: auto;
+                margin-top: 30px;
+            }
+
+            .tender-conversation-right>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-in-article {
+                width: 100%;
+                margin: 40px auto;
+            }
+
+            .img-in-article>img {
+                width: 100%;
+                height: auto;
+            }
+
+            .figcaption-in-article {
+                width: 300px;
+                height: 60px;
+                margin: 5px auto;
+                border-left: 3px solid #8ECAE6;
+                padding-left: 20px;
+            }
+
+            .figcaption-in-article>figcaption {
+                display: inline-block;
+                width: 280px;
+                text-align: left;
+            }
+
+            .infobox {
+                width: 310px;
+                height: 480px;
+                background-color: #D5E5FF;
+                margin: 20px auto;
+                display: flex;
+                position: relative;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 60px auto;
+            }
+
+            .infobox>span {
+                color: #1B5DC8;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 50px;
+                position: absolute;
+                top: 15px;
+                left: 25px;
+            }
+
+            .related-item {
+                padding-left: 25px;
+            }
+
+            /*不知分隔線可以寫哪*/
+            .related-item>img {
+                width: 110x;
+                height: 75px;
+                margin-top: 75px;
+                border-radius: 10px;
+                display: inline-block;
+            }
+
+            .related-item>p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                width: 140px;
+                color: #00296B;
+                position: absolute;
+                display: inline-block;
+                right: 15px;
+                margin-top: 75px;
+            }
+
+            .sheep {
+                width: 300px;
+                height: auto;
+                display: block;
+                margin: 10px auto;
+            }
+
+            .bottom {
+                width: 100%;
+                height: 272px;
+                background-color: #4A4949;
+                margin-top: 80px;
+                position: absolute;
+            }
+
+            .bottom>img {
+                position: relative;
+                width: 120px;
+                top: 50px;
+                left: 50px;
+                display: inline-block;
+            }
+
+            .bottom>div {
+                width: 80px;
+                height: 183px;
+                margin-left: 235px;
+                border-left: 0.5px solid #e2e2e2;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: space-between;
+                padding-left: 20px;
+            }
+
+            .our-name {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 32px;
+                color: #F6F6F6;
+                position: relative;
+                display: inline-block;
+            }
+
+            .comment {
+                width: calc(310/375*100%);
+                margin: 40px auto;
+                background-color: #0077B6;
+                padding: 7px 10px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <div class="header-box">
+            <div class="logo" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="../web_final/icon/logo-horizontal.png">
+            </div>
+        </div>
+        <h2>強制入眠</h2>
+        <h1>氣體監測結合警示設計　防下水道工人缺氧中毒</h1>
+        <div class="first-img">
+            <img src="photo/3.1.jpg">
+            <div class="first-figcaption-box">
+                <figcaption>「下水道守護員」團隊成員合影，分別為黃雷洋（左一）、張幻柔（右一）、陳昱仁（右二）。　圖／陳昱仁提供
+                </figcaption>
+            </div>
+        </div>
+        <!--月亮暫-->
+        <img id="author-moon" src="../web_final/icon/Frame.png">
+        <div id="author-moon-line"></div>
+        <div class="author">
+            <img src="photo/jia_photo.jpg">
+            <p1>吳曼嘉</p1>
+            <p2>2019/11/20 20:05:05</p2>
+        </div>
+        <div class="wave">
+            <img src="../web_final/icon/wave.png">
+        </div>
+        <p>下水道時常充斥有害氣體，導致工人在工作時有安全上的疑慮。明志科技大學工業設計系學生陳昱仁、張幻柔及黃雷洋的畢業製作作品「下水道守護員」，整合下水道相關有害氣體檢測工具，能夠以閃光和發出警示音等方式達到警示作用，藉此降低工人因此死亡或昏迷的機率，於「2019台灣國際學生創意設計大賽產品設計類」獲得銀獎。
+        </p>
+        <p>下水道屬於<span style="padding-bottom: 1px;border-bottom: 2px solid #FFB703;">局限空間（註1）</span>，根據監察院<a href="https://www.cy.gov.tw/public/Data/108mo/107%E8%B2%A1%E8%AA%BF0053.pdf" target="_blank" style="color:#FFB703">調查報告</a>顯示，局限空間作業災害每年平均造成13人死傷，主因為吸入硫化氫毒氣或所處工作環境為缺氧狀態。而預防此狀況最直接的方式，便是確實讓其達到通風換氣，並進行氣體監測。
+        </p>
+        <div class="comment">
+            <figcaption style="text-align: left; ">註1：根據《職業安全衛生設施規則》，勞工進出方法受限制，且無法以自然通風來維持充分、清淨空氣之空間。</figcaption>
+        </div>
+        <img class="tender-conversation-left" src="../web_final/icon/conversation-4.png">
+        <figure class="img-in-article">
+            <img src="photo/3.2.jpg">
+        </figure>
+        <div class="figcaption-in-article">
+            <figcaption>「下水道守護員」以橘色和黑色為主色，主機為三角形狀，期望達到警示作用。　圖／陳昱仁提供</figcaption>
+        </div>
+        <p>下水道守護員由主機、通風管和隨身檢測儀構成，裝置前端有一根9公尺長的通風管，工人在進行下水道工程前，會先拉出通風管，放入下水道檢測氣體濃度是否處於安全範圍內。確認安全後，工人便可配戴隨身檢測儀於安全帽上，開始作業。當過程遇到有害氣體濃度過高時，主機透過LED燈發亮及聲音警示，提醒施工人員立即疏散，隨身檢測儀則會發出無線電波訊號給路面主機，提醒地上人員打電話求助，主機也能主動通報附近醫院。
+        </p>
+        <p>起初團隊利用<span style="padding-bottom: 1px;border-bottom: 2px solid #FFB703;">光纖導光（註2）</span>技術，纏繞在通風管上，但團隊指導老師吳田瑜認為，整段通風管都會發光其實無助於警示，因此只在工人會看到的主機前端和管子末端裝設LED燈即可。同時他們也針對使用步驟進行調整，從最初的五個增加至七個步驟，加入「通風管偵測到有害氣體的發亮警示」及「地上人員的通報」，讓檢測流程更為完善。
+        </p>
+        <div class="comment">
+            <figcaption style="text-align: left; ">註2：利用玻璃原絲和塑膠導光材質，導引光的走向。</figcaption>
+        </div>
+        <p>最初由對社會議題非常關心的張幻柔，提議製作跟下水道工程有關的設計作品，希望能解決工人困境，而後團隊三人再一起思考如何設計出確實有效的裝置。陳昱仁說：「但因為這一個領域是我們不太熟悉的，所以比較不確定網路資料是否正確。」因此團隊成員會直接詢問校門口進行電線維修的施工人員，方得以驗證其正確性。
+        </p>
+        <p>不過黃雷洋也坦承下水道守護員還有很多不完美，他說：「技術方面其實是需要電子工程師去驗證的，但這牽扯到成本及研發時間太短的問題。」產品開發從資料蒐集、市場調查到最後生產要耗時一至兩年，而畢業製作時程短，但黃雷洋強調，下水道守護員的概念是可行的，也希望未來可以與政府部門合作，保障所有作業人員的人身安全。
+        </p>
+        <p>台灣下水道協會理事長江黎明肯定下水道守護員的一機多用，他說：「其實通風設備原來就有，但它（下水道守護員）已經再進化，變成除了通風以外，它還可以檢測氣體濃度。」同時他也注意到通風管可以收縮，利於工人收納攜帶，江黎明認為此為非常體貼工人的設計細節。
+        </p>
+        <div class="tender-conversation-right">
+            <img src="../web_final/icon/conversation-3.png">
+        </div>
+        <figure class="img-in-article">
+            <img src="photo/3.3.jpg">
+        </figure>
+        <div class="figcaption-in-article">
+            <figcaption>「下水道守護員」的1：2模型，隨身檢測儀可以夾在安全帽上，幫助工人在進入下水道後檢測有害氣體濃度。　圖／陳昱仁提供</figcaption>
+        </div>
+        <!--這邊超連結還沒加-->
+        <div class="infobox">
+            <span>再挑選一份助眠良物吧！</span>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="photo/4.2.jpg">
+                <p>「感SENSE」結合AI深度學習　打造居家4D觀影新體驗</p>
+            </div>
+            <div class="related-item">
+                <img src="photo/infobox-a.png" style=" cursor:pointer;"
+                    onclick="location.href='./tender-article2.html'">
+                <p>遏止網軍帶風向　PTT審查系統「糾」出異常帳號</p>
+            </div>
+            <div class="related-item">
+                <img src="photo/1.1.jpg" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <p>防誤食禁藥　APP增中藥資訊</p>
+            </div>
+        </div>
+        <!--羊暫-->
+        <img class="sheep" src="icon/running-sheep.png" style="display:block;margin:10px auto;">
+        <div class="bottom">
+            <!--關於我們暫，這邊超連結還沒加-->
+            <img src="icon/about-us.png" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+            <div>
+                <span class="our-name">陳珮瑄</span>
+                <span class="our-name">蔡淳宇</span>
+                <span class="our-name">劉書妤</span>
+                <span class="our-name">吳曼嘉</span>
+                <span class="our-name">張佳琪</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
