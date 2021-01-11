@@ -15,6 +15,41 @@
         body {
             background-color: #25334A;
         }
+        
+         /* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #FFFFFF;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #2081C3;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+ 
 
         /* desktop */
         @media (min-width:1023px) {
@@ -921,13 +956,13 @@
                 <img src="../web_final/photo/infobox-1.jpg" onclick="location.href='./longnews2.html'">
                 <p onclick="location.href='./longnews2.html'">當人民進入刑事審判　國民法官制的挑戰與展望</p>
             </div>
-            <div class="related-item" style=" cursor:pointer;">
-                <img src="../web_final/photo/infobox-2.jpg" onclick="location.href='./tender-long2.html'">
-                <p onclick="location.href='./tender-long2.html'">「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-long2.html'">
+                <img src="../web_final/photo/infobox-2.jpg">
+                <p>「新」火相傳：延續母語價值　新住民語文課程的理想與現實</p>
             </div>
-            <div class="related-item" style=" cursor:pointer;">
-                <img src="../web_final/photo/infobox-3.jpg" onclick="location.href='./tender-article2.html'">
-                <p onclick="location.href='./tender-article2.html'">《送報伕》談勞動者　融舞蹈訴壓迫</p>
+            <div class="related-item" style=" cursor:pointer;" onclick="location.href='./tender-article2.html'">
+                <img src="../web_final/photo/infobox-3.jpg">
+                <p>《送報伕》談勞動者　融舞蹈訴壓迫</p>
             </div>
         </div>
         <!--羊暫-->
@@ -944,7 +979,23 @@
             </div>
         </div>
     </div>
-
+    	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+<script>
+$(function(){
+	$('#BackTop').click(function(){ 
+		$('html,body').animate({scrollTop:0}, 333);
+	});
+	$(window).scroll(function() {
+		if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		} else {
+			$('#BackTop').stop().fadeOut(222);
+		}
+	}).scroll();
+});
+</script>
 </body>
 
 </html>
